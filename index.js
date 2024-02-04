@@ -14,9 +14,10 @@ let randomcolor = function(){
 console.log(randomcolor())
 let interval
 suru.addEventListener("click", function(){
-     interval =  setInterval(changecolor,1000)
+     interval =  setInterval(changecolor,2000)
     function changecolor(){
-        document.body.style.backgroundColor = randomcolor()
+      document.body.style.backgroundColor = randomcolor()
+        document.getElementById("show").innerHTML = randomcolor()
     }
     console.log(randomcolor())
 })
